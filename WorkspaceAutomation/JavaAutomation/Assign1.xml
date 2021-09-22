@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "Login And Logout ActiTime">
+	<test name = "ActiTime">
+		<classes>
+			<class name = "com.sgtest.TestNGAssignment.Assign1"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign2"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign3"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign4"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign5"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign6"></class>
+			<class name = "com.sgtest.TestNGAssignment.Assign7"></class>
+		</classes>
+	</test>
+</suite>

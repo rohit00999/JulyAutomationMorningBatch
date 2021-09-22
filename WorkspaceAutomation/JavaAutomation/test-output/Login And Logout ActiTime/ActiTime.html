@@ -1,0 +1,374 @@
+<html>
+<head>
+<title>TestNG:  ActiTime</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ActiTime</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>59/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 16 22:35:01 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>184 seconds (184013 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.close()'><b>close</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.deletproj()'><b>deletproj</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.login()'><b>login</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.Logout()'><b>Logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.Logout()'><b>Logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.closeApplication()'><b>closeApplication</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.minimizeFlyOutWindow()'><b>minimizeFlyOutWindow</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.launchBrowser()'><b>launchBrowser</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.delettsk()'><b>delettsk</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.close()'><b>close</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.launch()'><b>launch</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>3</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.close()'><b>close</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.Login()'><b>Login</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.createproj()'><b>createproj</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.Logout()'><b>Logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.Login()'><b>Login</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.Login()'><b>Login</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.creatcustomer()'><b>creatcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>15</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.lauch()'><b>lauch</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>3</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.Logout()'><b>Logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.logout()'><b>logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.createuser()'><b>createuser</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>14</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.createproj()'><b>createproj</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.close()'><b>close</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.deletcust()'><b>deletcust</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.creatcustomer()'><b>creatcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>9</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.modifycustomer()'><b>modifycustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.createproj()'><b>createproj</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.deletCustomer()'><b>deletCustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.Login()'><b>Login</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.login()'><b>login</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.modify()'><b>modify</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.close()'><b>close</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.creatcustomer()'><b>creatcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign2.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign2</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign2@750e2b97</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.createtask()'><b>createtask</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.minimize()'><b>minimize</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.deletCustomer()'><b>deletCustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>10</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.launch()'><b>launch</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.Login()'><b>Login</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.deletcustomer()'><b>deletcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>8</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign3.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign3</td>
+<td></td>
+<td>4</td>
+<td>com.sgtest.TestNGAssignment.Assign3@3e27aa33</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign5.creatcustomer()'><b>creatcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign5@2ddc9a9f</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign7.Logout()'><b>Logout</b><br>Test class: com.sgtest.TestNGAssignment.Assign7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign7@2a7f1f10</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign6.modifyproj()'><b>modifyproj</b><br>Test class: com.sgtest.TestNGAssignment.Assign6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtest.TestNGAssignment.Assign6@298a5e20</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign4.creatcustomer()'><b>creatcustomer</b><br>Test class: com.sgtest.TestNGAssignment.Assign4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign4@2e385cce</td></tr>
+<tr>
+<td title='com.sgtest.TestNGAssignment.Assign1.navigate()'><b>navigate</b><br>Test class: com.sgtest.TestNGAssignment.Assign1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtest.TestNGAssignment.Assign1@18df8434</td></tr>
+</table><p>
+</body>
+</html>

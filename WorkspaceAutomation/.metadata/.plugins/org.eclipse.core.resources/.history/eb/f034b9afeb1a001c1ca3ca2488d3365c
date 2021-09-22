@@ -1,0 +1,56 @@
+package POIassignment;
+import java.io.FileOutputStream;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//adding fruits into xlsx file from 10th row
+public class Q3 {
+
+	public static void main(String[] args) {
+		writeExcelData();
+		}
+		
+		static void writeExcelData()
+		{
+			FileOutputStream fout=null;
+			Workbook wb=null;
+			Sheet sh=null;
+			Row row=null;
+			Cell cell=null;
+			try
+			{
+				
+				wb=new XSSFWorkbook();
+				sh=wb.createSheet("20Fruits");
+				row=sh.createRow(9);
+				for(int i=0;i<20;i++)
+				{
+					cell=row.createCell(i);
+					cell.setCellValue("Fruit"+(i+1));
+				}
+				fout=new FileOutputStream("D:\\Assignment\\fruits.xlsx");
+				wb.write(fout);
+				
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			finally
+			{
+				try
+				{
+					fout.close();
+					wb.close();
+					sh=null;
+					row=null;
+					cell=null;
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+
+}

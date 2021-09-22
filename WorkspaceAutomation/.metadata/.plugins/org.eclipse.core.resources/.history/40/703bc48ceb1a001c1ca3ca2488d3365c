@@ -1,0 +1,67 @@
+package POIassignment;
+import java.io.FileOutputStream;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//writing month names into an excel file diagonally
+public class Q1 {
+
+	public static void main(String[] args) {
+		
+		writeExcelData();
+		}
+		
+		static void writeExcelData()
+		{
+			FileOutputStream fout=null;
+			Workbook wb=null;
+			Sheet sh=null;
+			Row row=null;
+			Cell cell=null;
+			String month[]= {"January","February","March","April","May","June","July","August","September","October","November","December"};
+			try
+			{
+				
+				wb=new XSSFWorkbook();
+				sh=wb.createSheet("Months");
+				
+				for(int i=0;i<month.length;i++)
+				{
+					for(int j=0;j<month.length;j++)
+					{
+						if(i==j)
+						{
+							row=sh.createRow(j);
+							cell=row.createCell(j);
+							cell.setCellValue(month[j]);
+						}
+					}
+				}
+				
+				fout=new FileOutputStream("D:\\Assignment\\q1.xlsx");
+				wb.write(fout);
+				
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			finally
+			{
+				try
+				{
+					fout.close();
+					wb.close();
+					sh=null;
+					row=null;
+					cell=null;
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+
+	}
+
+}

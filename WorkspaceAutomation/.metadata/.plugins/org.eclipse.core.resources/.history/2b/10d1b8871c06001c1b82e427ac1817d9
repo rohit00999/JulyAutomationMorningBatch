@@ -1,0 +1,21 @@
+package miscellaneous;
+class Example
+{
+	static int count = 100;
+	String s = "Rohit";
+	static void displayName()
+	{
+		if(count>=0)
+		{
+			System.out.println(s);
+			count--;
+		}
+	}
+}
+public class WithoutUseLoopPrintName {
+	public static void main(String[] args) {
+		
+		Example.displayName();
+
+	}
+}

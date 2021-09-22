@@ -1,0 +1,59 @@
+package com.sgtest.POIAssignments;
+import java.io.FileOutputStream;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//adding cities into xlsx file from 5th column
+public class Q4 {
+
+	public static void main(String[] args) {
+		writeExcelData();
+		}
+		
+		static void writeExcelData()
+		{
+			FileOutputStream fout=null;
+			Workbook wb=null;
+			Sheet sh=null;
+			Row row=null;
+			Cell cell=null;
+			try
+			{
+				
+				wb=new XSSFWorkbook();
+				sh=wb.createSheet("20Cities");
+				int c=0;
+				int c1=1;
+				for(int i=c;i<20+c;i++)
+				{
+					row=sh.createRow(i);
+					cell=row.createCell(4);
+					cell.setCellValue("City"+c1);
+					c1++;
+				}
+				fout=new FileOutputStream("E:\\POIAssignment\\cities.xlsx");
+				wb.write(fout);
+				
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			finally
+			{
+				try
+				{
+					fout.close();
+					wb.close();
+					sh=null;
+					row=null;
+					cell=null;
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+
+}

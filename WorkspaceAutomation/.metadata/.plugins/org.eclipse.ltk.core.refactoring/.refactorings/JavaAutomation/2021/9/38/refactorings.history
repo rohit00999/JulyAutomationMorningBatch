@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sgtest.DataProviderDemo.DataProvider&apos; to &apos;WithOutDataProvider&apos;&#x0D;&#x0A;- Original project: &apos;JavaAutomation&apos;&#x0D;&#x0A;- Original element: &apos;com.sgtest.DataProviderDemo.DataProvider&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sgtest.DataProviderDemo.WithOutDataProvider&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DataProvider&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sgtest.DataProviderDemo{DataProvider.java[DataProvider" matchStrategy="1" name="WithOutDataProvider" qualified="false" references="true" similarDeclarations="false" stamp="1631769780940" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,47 @@
+package POIassignment;
+import java.io.FileInputStream;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//finding no of rows
+public class Q5 {
+
+	public static void main(String[] args) {
+		readExcelData();
+		}
+		
+		static void readExcelData()
+		{
+			FileInputStream fin=null;
+			Workbook wb=null;
+			Sheet sh=null;
+			try
+			{
+				fin=new FileInputStream("D:\\Assignment\\cities.xlsx");
+				wb=new XSSFWorkbook(fin);
+				sh=wb.getSheet("20Cities");
+				int rowCount=sh.getLastRowNum();
+				if(rowCount>0)
+				{
+					System.out.println("Number of rows: "+(rowCount+1));
+				}
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			finally
+			{
+				try
+				{
+					fin.close();
+					wb.close();
+					sh=null;
+				}catch(Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		
+	}
+
+}

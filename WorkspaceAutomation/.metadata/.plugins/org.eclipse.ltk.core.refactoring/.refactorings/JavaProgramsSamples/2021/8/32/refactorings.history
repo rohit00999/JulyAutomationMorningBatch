@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sgtest.methodsprogramsassign.ReadElement2DArray&apos; to &apos;ReadStringElement2DArray&apos;&#x0D;&#x0A;- Original project: &apos;JavaProgramsSamples&apos;&#x0D;&#x0A;- Original element: &apos;com.sgtest.methodsprogramsassign.ReadElement2DArray&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sgtest.methodsprogramsassign.ReadStringElement2DArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ReadElement2DArray&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sgtest.methodsprogramsassign{ReadElement2DArray.java[ReadElement2DArray" matchStrategy="1" name="ReadStringElement2DArray" qualified="false" references="true" similarDeclarations="false" stamp="1628314540160" textual="false" version="1.0"/>
+</session>
